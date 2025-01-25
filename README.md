@@ -1,5 +1,7 @@
 # Go Template Repository
 
+> Hot reloading works only for unix based systems
+
 ## Description
 This repository is a Golang template to simplify hot-reloads for development, and give's you a Dockerfile to deploy your application
 
