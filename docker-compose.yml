@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  go-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8080:8080"
+    environment:
+      - ENV=develop
+      - SERVER_PORT=8080
+    networks:
+      - local
+    volumes:
+      - .:/app
+      - /app/tmp
+    stdin_open: true
+    tty: true
+
+networks:
+  local:
